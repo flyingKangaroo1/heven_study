@@ -15,22 +15,22 @@ class LidarCameraProjection:
         # ------------------------------------------------
         
         # Camera Intrinsic Parameters
-        self.intrinsic_matrix_left = np.array([[683.4524,    0.0,     318.4096],
-                                               [  0.0,     685.3216, 240.1933],
-                                               [  0.0,        0.0,        1.0]], dtype=np.float64)
+        self.intrinsic_matrix_left = np.array([[],
+                                               [],
+                                               []], dtype=np.float64)
         
-        self.intrinsic_matrix_right = np.array([[698.1857,    0.0,     322.8587],
-                                                [  0.0,     701.7986, 222.7475],
-                                                [  0.0,        0.0,        1.0]], dtype=np.float64)
+        self.intrinsic_matrix_right = np.array([[],
+                                                [],
+                                                []], dtype=np.float64)
         
         # Lidar -> Camera Extrinsic Parameters (3x4 [R|t])
-        self.extrinsic_matrix_left = np.array([[ 0.5032, -0.8642, -0.0011,  0.0925],
-                                               [-0.2176, -0.1254, -0.9679,  0.2056],
-                                               [ 0.8364,  0.4873, -0.2512,  0.0061]], dtype=np.float64)
+        self.extrinsic_matrix_left = np.array([[],
+                                               [],
+                                               [ ]], dtype=np.float64)
         
-        self.extrinsic_matrix_right = np.array([[-0.5224, -0.8517, -0.0422, -0.0516],
-                                                [-0.1572,  0.1448, -0.9769,  0.2452],
-                                                [ 0.8381, -0.5037, -0.2095,  0.0517]], dtype=np.float64)
+        self.extrinsic_matrix_right = np.array([[],
+                                                [],
+                                                [ ]], dtype=np.float64)
 
         # ------------------------------------------------
         # 2. Data Holders
